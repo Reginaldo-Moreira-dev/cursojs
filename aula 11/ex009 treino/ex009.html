@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Você é de qual país? <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+      function calcular() {
+            var txtvel = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Text(txtvel.value)
+            res.innerHTML = `<p>Vivendo em <strong>${vel}</strong></p>`
+            if (vel == 'Brasil') {
+                res.innerHTML += `<p>Você é<strong>Brasileiro</strong></p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
+        }
+        
+// Continua o erro, não aparece o que escrevo e nem a resposta na tela do navegador, estudar para corrigir
+
+//         var pais = 'Chile'
+// console.log(`Vivendo em ${pais}`)
+// if (pais == 'Brasil') {
+//     console.log(`Você é Brasileiro`)
+// } else {
+//     console.log(`Você é Estrangeiro!`)
+// }
+
+
+    </script>
+</body>
+</html>
+
+
+
